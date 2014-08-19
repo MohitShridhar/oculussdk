@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-OculusSDK
-=========
+# OculusSDK
 
-Oculus SDK packaged for easier installation.
-=======
-oculussdk
-=========
-
-OculusSDK - Used by Gazebo 3.0
->>>>>>> e3089ac552113fe8e19eb7d654fe62f3dd247503
+OSX 10.9 & Ubuntu 14.04 Compatible Oculus-Rift SDK. To be used with Gazebo 4.0
