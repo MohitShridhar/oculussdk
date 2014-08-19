@@ -127,7 +127,10 @@ endif()
 if(WIN32)
     SET(OculusVR_EXTRA_LIBS setupapi winmm)
 elseif(APPLE)
-    # FIXME ???
+    find_library(COCOA_LIBRARY Cocoa)
+    find_library(IOKIT_LIBRARY IOKit)
+    SET(OculusVR_EXTRA_LIBS ${COCOA_LIBRARY} ${IOKIT_LIBRARY})
+
 else()
     # FIXME switch to pkg-config for this?
     SET(OculusVR_EXTRA_LIBS pthread udev X11 Xinerama)
